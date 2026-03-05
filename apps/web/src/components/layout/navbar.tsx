@@ -184,7 +184,7 @@ export function AppNavbar({ session, notifications }: AppNavbarProps) {
 									{gh && (
 										<div className="flex items-center gap-3 mt-2.5 pt-2 border-t border-border/40">
 											<Link
-												href={`/users/${gh.login}?tab=followers`}
+												href={`/${gh.login}?tab=followers`}
 												aria-label="View my followers"
 												className="text-[10px] text-muted-foreground font-mono hover:text-foreground transition-colors"
 											>
@@ -195,7 +195,7 @@ export function AppNavbar({ session, notifications }: AppNavbarProps) {
 												followers
 											</Link>
 											<Link
-												href={`/users/${gh.login}?tab=following`}
+												href={`/${gh.login}?tab=following`}
 												aria-label="View my following"
 												className="text-[10px] text-muted-foreground font-mono hover:text-foreground transition-colors"
 											>
@@ -206,7 +206,7 @@ export function AppNavbar({ session, notifications }: AppNavbarProps) {
 												following
 											</Link>
 											<Link
-												href={`/users/${gh.login}`}
+												href={`/${gh.login}`}
 												aria-label="View my repositories"
 												className="text-[10px] text-muted-foreground font-mono hover:text-foreground transition-colors"
 											>
